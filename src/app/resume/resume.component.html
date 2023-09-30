@@ -1,0 +1,23 @@
+<app-details [Details]="resume?.details"></app-details>
+
+<ng-container [ngSwitch]="stepperOrientation | async">
+    <div *ngSwitchCase="'horizontal'"></div>
+    <div *ngSwitchCase="'vertical'"></div>
+</ng-container>
+
+<mat-card class="sectionHeader">
+    <mat-card-content>Employment History</mat-card-content>
+</mat-card>
+<mat-stepper [orientation]="(stepperOrientation | async)!">
+
+    <mat-step *ngFor="let employer of resume?.employmentHistory">
+        <ng-template matStepLabel>{{employer?.companyName}}</ng-template>
+        <app-employment-history [employer]="employer">
+        </app-employment-history>
+        <div class="stepperButtons">
+            <button mat-button matStepperPrevious>Back</button>
+            <button mat-button matStepperNext>Next</button>
+        </div>
+    </mat-step>
+
+</mat-stepper>

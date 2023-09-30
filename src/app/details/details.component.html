@@ -1,0 +1,18 @@
+<mat-card class="container">
+    <mat-card-header>
+        <mat-card-title-group>
+            <img mat-card-lg-image [src]="Details?.imageUrl" alt="profile pic">
+            <mat-card-title>Name: {{Details?.name}} </mat-card-title>
+            <mat-card-title> Role:
+                {{Details?.jobRole}}</mat-card-title>
+            <mat-card-title> Phone Number: {{Details?.phoneNumber}} </mat-card-title>
+            <mat-card-title> Email Id:
+                {{Details?.email}}</mat-card-title>
+        </mat-card-title-group>
+    </mat-card-header>
+    <mat-card-content>
+        {{Details?.Summary}}
+    </mat-card-content>
+</mat-card>
+
+<mat-divider></mat-divider>
