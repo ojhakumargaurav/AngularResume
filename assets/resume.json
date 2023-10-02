@@ -79,6 +79,10 @@
             "git",
             "github",
             "gitlab"
+        ],
+        "Software Architectural pattern": [
+            "assets/skills/Agile.png",
+            "assets/skills/Microservice.png"
         ]
     }
 }
