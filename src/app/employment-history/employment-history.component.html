@@ -4,13 +4,12 @@
             employer?.endDate}}</mat-card-subtitle>
     </mat-card-title>
     <mat-card-content>
-        <mat-list>
+        <ul>
 
-            <mat-list-item *ngFor="let desc of employer?.description; index as i">
-                <mat-icon matListItemIcon>folder</mat-icon>
-                <div matListItemTitle>{{desc}}</div>
+            <li *ngFor="let desc of employer?.description; index as i">
+                <span>{{desc}}</span>
 
-            </mat-list-item>
-        </mat-list>
+            </li>
+        </ul>
     </mat-card-content>
 </mat-card>
