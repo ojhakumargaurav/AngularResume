@@ -21,12 +21,14 @@ jobs:
     - name: Install dependencies
       run: npm install
     - name: Build
-      run: npm run build:prod
+      run: 
+        npm run build:prod
+        ls dist
 
     - name: Deploy
       if: success()
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: dist/AngularResume
+        publish_dir: dist/resume-portfolio
         enable_jekyll: true
