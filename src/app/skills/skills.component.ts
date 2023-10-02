@@ -18,6 +18,9 @@ export class SkillsComponent {
     return skill;
   }
   getIconClass(skill: string) {
+    if (skill.includes(".")) {
+      return "hidden"
+    }
     return "devicon-" + skill + "-plain-wordmark colored";
   }
 }

@@ -14,9 +14,5 @@ export class ProfileService {
   getResume() {
     return this.http.get<ResumeModel>('assets/resume.json');
   };
-  // check_if_image_available(skill: string) {
-  //   return this.http.get(`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${skill}/${skill}-original.svg`);
-
-  // }
 
 }

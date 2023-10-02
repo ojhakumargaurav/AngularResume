@@ -1,5 +1,5 @@
 .detailsContainer {
-    display: flex;
+    display: block;
     margin-left: 10px;
 
 }
@@ -7,7 +7,7 @@
 .imageContainer {}
 
 .textContainer {
-    display: block;
+    display: flex;
 
 }
 
@@ -22,6 +22,7 @@
 .contactDetails {
     display: block;
     min-width: 50%;
+    margin-left: 10px;
 }
 
 .sumamry {

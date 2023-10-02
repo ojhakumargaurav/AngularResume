@@ -1,7 +1,10 @@
 <div class="skillsContainer">
-    <div *ngFor="let item of skills| keyvalue " class="skillCard">
-
-        <i *ngFor="let skill of getArrays(item.value)" [class]="getIconClass(skill)" class="skillIcon"></i>
+    <div *ngFor="let item of skills| keyvalue ">
+        <span *ngFor="let skill of getArrays(item.value)">
+            <i [class]="getIconClass(skill)" class="skillIcon"></i>
+            <img [src]="skill" *ngIf="getIconClass(skill)=='hidden'" alt="add image in skills folder"
+                class="skillImages">
+        </span>
 
 
 
