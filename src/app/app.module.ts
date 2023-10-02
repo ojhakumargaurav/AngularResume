@@ -20,6 +20,7 @@ import { MatListModule } from '@angular/material/list';
 import { ResumeComponent } from './resume/resume.component';
 import { MatStepperModule } from '@angular/material/stepper';
 import { NgSwitch, NgSwitchCase, AsyncPipe } from '@angular/common';
+import { SkillsComponent } from './skills/skills.component';
 
 
 
@@ -29,6 +30,7 @@ import { NgSwitch, NgSwitchCase, AsyncPipe } from '@angular/common';
     DetailsComponent,
     EmploymentHistoryComponent,
     ResumeComponent,
+    SkillsComponent,
 
   ],
   imports: [

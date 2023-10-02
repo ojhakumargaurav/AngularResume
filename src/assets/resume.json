@@ -5,7 +5,11 @@
         "phoneNumber": "+91-8923353635",
         "email": "kumarojhagaurav@gmail.com",
         "jobRole": "Full Stack Developer",
-        "imageUrl": "assets/gaurav_image.png"
+        "imageUrl": "assets/gaurav_image.png",
+        "address": [
+            "Navalur, Opposite Vivira mall",
+            "Chennai, Tamil Nadu-603103 "
+        ]
     },
     "employmentHistory": [
         {
@@ -45,5 +49,36 @@
                 "Collaborated in Agile, fostering continuous improvement with clients."
             ]
         }
-    ]
+    ],
+    "skills": {
+        "programming languages": [
+            "python",
+            "csharp",
+            "sql",
+            "javascript",
+            "typescript"
+        ],
+        "database": [
+            "postgresql",
+            "sqlite",
+            "mongodb"
+        ],
+        "front-end": [
+            "Angularjs",
+            "vuejs"
+        ],
+        "backend": [
+            "flask",
+            "fastapi",
+            "dotnetcore"
+        ],
+        "cloud": [
+            "amazonwebservices"
+        ],
+        "version Control": [
+            "git",
+            "github",
+            "gitlab"
+        ]
+    }
 }

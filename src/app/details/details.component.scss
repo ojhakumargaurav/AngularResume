@@ -1,4 +1,37 @@
-.container {
-    width: 70%;
-    margin-left: 15%;
+.detailsContainer {
+    display: flex;
+    margin-left: 10px;
+
+}
+
+.imageContainer {
+    width: 16%;
+
+}
+
+.textContainer {
+    display: block;
+
+}
+
+.personalDetails {
+    min-height: 20%;
+    display: flex;
+    padding: 10px;
+    margin-right: 10px;
+    // font-weight: bold;
+}
+
+.contactDetails {
+    display: block;
+    min-width: 50%;
+}
+
+.sumamry {
+    padding: 10px;
+}
+
+.name {
+    font-size: larger;
+    font-weight: bolder;
 }

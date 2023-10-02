@@ -14,16 +14,14 @@ import { map } from 'rxjs/operators';
 })
 export class ResumeComponent {
   constructor(private ProfileService: ProfileService, breakpointObserver: BreakpointObserver) {
-    this.ProfileService.getResume().subscribe((resume: ResumeModel) => {
-      console.log(resume);
-      this.resume = resume
-
-    });
+    this.ProfileService.getResume().subscribe(
+      resume => this.resume = resume
+    );
     this.stepperOrientation = breakpointObserver
       .observe('(min-width: 800px)')
       .pipe(map(({ matches }) => (matches ? 'horizontal' : 'vertical')));
   }
   stepperOrientation: Observable<StepperOrientation>;
-  resume?: ResumeModel = undefined;
+  resume?: ResumeModel = new ResumeModel();
 
 }
